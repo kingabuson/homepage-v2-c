@@ -35,9 +35,9 @@ const HeroV3 = () => {
                 <div style={styles.topSection}>
                     <div style={styles.leftColumn}>
                         <h1 style={styles.headline}>
-                            <span style={{ whiteSpace: 'nowrap', display: 'block' }}>Everything You Need on</span>
+                            <span style={{ display: 'block' }}>Everything You Need on</span>
                             <motion.span
-                                style={{ ...styles.highlight, backgroundImage: highlightGradient, whiteSpace: 'nowrap', display: 'block' }}
+                                style={{ ...styles.highlight, backgroundImage: highlightGradient, display: 'block' }}
                             >
                                 Private Market Data
                             </motion.span>
@@ -156,13 +156,13 @@ const styles = {
         minWidth: '40%',
     },
     headline: {
-        fontSize: '4.5rem',
+        fontSize: '3.5rem',
         fontFamily: '"PT Serif", serif',
         fontWeight: 400,
         color: '#1a1a1a',
         marginBottom: '20px',
         letterSpacing: '-0.02em',
-        lineHeight: 1.1,
+        lineHeight: 1.2,
         position: 'relative',
         zIndex: 2,
     },
