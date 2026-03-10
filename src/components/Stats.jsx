@@ -1,30 +1,41 @@
-
 import React, { useState } from 'react';
 
 const geoData = {
     'Global': [
-        { value: '6M+', label: 'Entities Tracked', sub: "The industry's deepest coverage of global startups." },
-        { value: '3000+', label: 'Sectors Covered', sub: 'Granular tracking of emerging verticals.' },
-        { value: '20+', label: 'Countries', sub: 'Rich financial data for major hubs.' },
-        { value: '11K+', label: 'Reports Delivered', sub: 'Expert-curated insights.' }
+        { value: '5.5M+', label: 'Companies', sub: "The industry's deepest coverage of global startups." },
+        { value: '1.2M+', label: 'Funding Rounds', sub: 'Granular tracking of emerging verticals.' },
+        { value: '272K+', label: 'Financials', sub: 'Rich financial data for major hubs.' },
+        { value: '138K+', label: 'Cap Tables', sub: 'Expert-curated insights.' }
     ],
-    'USA': [
-        { value: '1.2M+', label: 'US Companies', sub: 'Comprehensive coverage of the US ecosystem.' },
-        { value: '800+', label: 'US Sectors', sub: 'Deep dive into Silicon Valley and beyond.' },
-        { value: '50+', label: 'US States', sub: 'Local insights for every region.' },
-        { value: '3K+', label: 'US Reports', sub: 'Market-specific US intelligence.' }
+    'US & Canada': [
+        { value: '1.4M+', label: 'Companies', sub: 'Comprehensive coverage of the US ecosystem.' },
+        { value: '650K+', label: 'Funding Rounds', sub: 'Deep dive into Silicon Valley and beyond.' },
+        { value: '19.2K+', label: 'Financials', sub: 'Local insights for every region.' },
+        { value: '9.6K+', label: 'Cap Tables', sub: 'Market-specific US intelligence.' }
+    ],
+    'Europe': [
+        { value: '1.3M+', label: 'Companies', sub: 'In-depth tracking of the UK startup scene.' },
+        { value: '286K+', label: 'Funding Rounds', sub: 'Focus on London and regional hubs.' },
+        { value: '164K+', label: 'Financials', sub: 'Coverage across England, Scotland, etc.' },
+        { value: '64.1K+', label: 'Cap Tables', sub: 'UK-specific sector deep dives.' }
     ],
     'India': [
-        { value: '800K+', label: 'India Entities', sub: 'Tracking the rapidly growing Indian market.' },
-        { value: '600+', label: 'India Sectors', sub: 'From Fintech to SaaS and beyond.' },
-        { value: '1', label: 'Country', sub: 'Focused intelligence on India.' },
-        { value: '2.5K+', label: 'India Reports', sub: 'Specific India market landscapes.' }
+        { value: '505K+', label: 'Companies', sub: 'Tracking the rapidly growing Indian market.' },
+        { value: '47K+', label: 'Funding Rounds', sub: 'From Fintech to SaaS and beyond.' },
+        { value: '65.1K+', label: 'Financials', sub: 'Focused intelligence on India.' },
+        { value: '38.5K+', label: 'Cap Tables', sub: 'Specific India market landscapes.' }
     ],
-    'UK': [
-        { value: '400K+', label: 'UK Entities', sub: 'In-depth tracking of the UK startup scene.' },
-        { value: '400+', label: 'UK Sectors', sub: 'Focus on London and regional hubs.' },
-        { value: '4', label: 'Regions', sub: 'Coverage across England, Scotland, etc.' },
-        { value: '1.5K+', label: 'UK Reports', sub: 'UK-specific sector deep dives.' }
+    'SEA': [
+        { value: '137K+', label: 'Companies', sub: 'Tracking the rapidly growing Indian market.' },
+        { value: '12.2K+', label: 'Funding Rounds', sub: 'From Fintech to SaaS and beyond.' },
+        { value: '9.3K+', label: 'Financials', sub: 'Focused intelligence on India.' },
+        { value: '6.4K+', label: 'Cap Tables', sub: 'Specific India market landscapes.' }
+    ],
+    'Africa': [
+        { value: '115K+', label: 'Companies', sub: 'Tracking the rapidly growing Indian market.' },
+        { value: '10.8K+', label: 'Funding Rounds', sub: 'From Fintech to SaaS and beyond.' },
+        { value: '2K+', label: 'Acquisitions', sub: 'Focused intelligence on India.' },
+        { value: '2.2K+', label: 'Investors', sub: 'Specific India market landscapes.' }
     ]
 };
 
@@ -117,7 +128,7 @@ const Stats = () => {
         select: {
             padding: '8px 16px',
             fontSize: '1rem',
-            borderRadius: '24px',
+            borderRadius: '10px',
             border: '1px solid #dadce0',
             backgroundColor: '#fff',
             color: '#1a73e8',
@@ -203,4 +214,3 @@ const Stats = () => {
 };
 
 export default Stats;
-

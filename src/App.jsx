@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import HeroV2 from './components/HeroV2';
+import HeroV3 from './components/HeroV3';
 
 import LogoTicker from './components/LogoTicker';
 import Features from './components/Features';
@@ -23,7 +24,7 @@ function App() {
       <ArrowBackground />
       <Header />
       <main>
-        <HeroV2 />
+        <HeroV3 />
 
         <AnimatedSection>
           <CustomerSegments />
