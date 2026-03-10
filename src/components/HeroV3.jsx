@@ -127,9 +127,9 @@ const styles = {
         objectPosition: 'bottom',
     },
     container: {
-        maxWidth: '1400px',
+        maxWidth: '1200px',
         margin: '0 auto',
-        padding: '0',
+        padding: '0 24px',
         position: 'relative',
         zIndex: 1,
         display: 'flex',
@@ -140,19 +140,20 @@ const styles = {
     topSection: {
         display: 'flex',
         flexDirection: 'row',
-        flexWrap: 'wrap',
         alignItems: 'center',
         justifyContent: 'space-between',
-        gap: '160px',
+        gap: '80px', // Reverted back to a smaller gap to fit side-by-side
         marginTop: 'auto',
         marginBottom: 'auto',
     },
     leftColumn: {
-        flex: '1.2 1 400px',
+        flex: '1.2 1 0',
         textAlign: 'left',
+        minWidth: '50%',
     },
     rightColumn: {
-        flex: '1 1 400px',
+        flex: '1 1 0',
+        minWidth: '40%',
     },
     headline: {
         fontSize: '4.5rem',
