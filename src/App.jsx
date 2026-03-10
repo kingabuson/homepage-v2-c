@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import HeroV2 from './components/HeroV2';
+
 import LogoTicker from './components/LogoTicker';
 import Features from './components/Features';
 import Stats from './components/Stats';
@@ -22,7 +23,7 @@ function App() {
       <ArrowBackground />
       <Header />
       <main>
-        <Hero />
+        <HeroV2 />
 
         <AnimatedSection>
           <CustomerSegments />
